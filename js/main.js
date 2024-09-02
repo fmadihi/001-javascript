@@ -90,4 +90,70 @@ if (day == 1) {
 } else {
     console.log("invalid");
 }
+let num1 = parseFloat(prompt("please enter first number...", "0"));
+let num2 = parseFloat(prompt("please enter second number...", "0"));
+let operand = prompt("please enter second operand...", "+");
+switch (operand) {
+    case '+':
+        console.log(`num1+num2= ${num1+num2}`);
+        break;
+    case '-':
+        console.log(`num1-num2= ${num1-num2}`);
+        break;
+    case '/':
+        console.log(`num1/num2= ${num1/num2}`);
+        break;
+    case '*':
+        console.log(`num1*num2= ${num1*num2}`);
+        break;
+    default:
+        console.log("Sorry, You enteres invalue Operand")
+}
 
+let username = prompt("please enter username");
+if (username === "ali") {
+    let password = prompt("please enter password");
+    if (password === "123") {
+        let email = prompt("please enter email");
+        if (email === "ff@f.com") {
+            console.log("welcome ali...you can enjoy sign in");
+        } else {
+            console.log("you are not ali, bad human");
+        }
+    } else {
+        console.log("ali you wrote wrong password!");
+    }
+} else {
+    console.log("please call ali...you are not ali!")
+}
+let username1 = prompt("please enter username");
+let password1 = prompt("please enter password");
+let email1 = prompt("please enter email");
+if (username1 === "ali" && password1 === "123" && email1 === "ff@f.com") {
+    console.log("Welcome ali");
+} else {
+    console.log("sorry we did not find you")
+}
+
+let x = 10;
+let y = 15;
+let res = x > y ? "Yes, x is more than y" : "No, y is more than x";
+console.log(res);
+function sumfunc(){
+    let value1 = parseFloat(prompt("enter first value"));
+    let value2 = parseFloat(prompt("enter second value"));
+    let sum = value1 + value2;
+    let demo = document.getElementById('demo');
+    demo.innerHTML = sum;
+}
+sumfunc();
+
+function info(fname,lname,age){
+    console.log(`Your name is ${fname} and your lastname is ${lname} and your age is ${age}`);
+}
+info('Fatemeh','Madihi',31)
+
+let continuee = confirm("do you want continue?");
+if(continuee == true){
+    
+}
