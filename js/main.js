@@ -47,3 +47,47 @@ var x = 10;
 var y = 20;
 var resault02 = x>y ? "Yes X more than Y" : "No Y more than X";
 console.log(resault02);
+let demo = document.getElementById('demo');
+console.log(demo.innerHTML);
+
+let x = 10;
+let y = 0;
+let result = x / y;
+if (!isFinite(result)) {
+    console.log("It is not Infinte");
+} else {
+    console.log(result);
+}
+
+if (true) {
+    console.log("run anyway");
+}
+*/
+//debugger;
+/*
+let age = parseInt(prompt("enter your age", 0));
+if (age >= 18) {
+    console.log("go to university");
+} else {
+    console.log('go to school');
+}
+
+let day = parseInt(prompt("enter a number for example : 1,2,3,4,5,6,7,..."));
+if (day == 1) {
+    console.log("shanbe");
+} else if (day == 2) {
+    console.log("1shanbe");
+} else if (day == 3) {
+    console.log("2shanbe");
+} else if (day == 4) {
+    console.log("3shanbe");
+} else if (day == 5) {
+    console.log("4shanbe");
+} else if (day == 6) {
+    console.log("5shanbe");
+} else if (day == 7) {
+    console.log("jomee");
+} else {
+    console.log("invalid");
+}
+
