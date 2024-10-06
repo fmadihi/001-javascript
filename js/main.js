@@ -62,9 +62,9 @@ if (!isFinite(result)) {
 if (true) {
     console.log("run anyway");
 }
-*/
-//debugger;
-/*
+
+debugger;
+
 let age = parseInt(prompt("enter your age", 0));
 if (age >= 18) {
     console.log("go to university");
@@ -156,4 +156,18 @@ info('Fatemeh','Madihi',31)
 let continuee = confirm("do you want continue?");
 if(continuee == true){
     
+}
+
+function check(e) {
+    if (e == 1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+let check_value = check(1);
+console.log(check_value);
+
+for (let i = 0; i < 1000; i++) {
+    document.write(`<h1>${i} Hello</h1>`)
 }
