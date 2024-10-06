@@ -190,3 +190,10 @@ for (let i = 0; i < 1000; i++) {
             h1>`);
     }
 }
+for (let i = 0; i < 100; i++) {
+    if (i % 6 === 0) {
+        document.write(`<h1 style="text-align:center;box-shadow:inset 5px 5px 25px gray; width:300px;margin:0 auto;">multiple 6= ${i}</h1>`);
+    } else {
+        document.write(`<h1 style="text-align:center;box-shadow:inset 5px 5px 25px red; width:300px;margin:0 auto;">multiple 6= ${i}</h1>`);
+    }
+}
