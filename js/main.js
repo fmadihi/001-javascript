@@ -171,3 +171,22 @@ console.log(check_value);
 for (let i = 0; i < 1000; i++) {
     document.write(`<h1>${i} Hello</h1>`)
 }
+for (let i = 0; i < 1000; i++) {
+    if (i % 2 === 0) {
+        document.write(`<h1
+            style="text-align:cent
+            er;box-shadow:inset 
+            5px 5px 25px gray; 
+            width:300px;margin:0 
+            auto;">even= ${i}</
+            h1>`);
+    } else {
+        document.write(`<h1
+            style="text-align:cent
+            er;box-shadow:inset 
+            5px 5px 25px red; 
+            width:300px;margin:0 
+            auto;">odd= ${i}</
+            h1>`);
+    }
+}
