@@ -197,3 +197,10 @@ for (let i = 0; i < 100; i++) {
         document.write(`<h1 style="text-align:center;box-shadow:inset 5px 5px 25px red; width:300px;margin:0 auto;">multiple 6= ${i}</h1>`);
     }
 }
+let x = Number(prompt("How many number do you want to enter?"));
+let sum = 0;
+for (let i = 1; i <= x; i++) {
+    let point = Number(prompt(`please eneter number ${i}...!`));
+    sum += point;
+}
+document.write(`the total is = ${sum}`);
