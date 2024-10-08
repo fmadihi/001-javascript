@@ -210,3 +210,14 @@ for (let i = 1; i <= x; i++) {
     fact *= i;
 }
 document.write(`the resault is ${fact}`);
+let x = Number(prompt("please enter a number for fibonachi..."));
+let a = 1;
+let b = 1;
+let temp;
+document.write(`${a}  ${b}  `);
+for (i = 1; i < x; i++) {
+    let sum = a + b;
+    a = b;
+    b = sum;
+    document.write(`${sum}   `);
+}
