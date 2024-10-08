@@ -233,3 +233,14 @@ for (let i = 1; i <= x; i++) {
     }
     document.write(`<br>`);
 }
+let x = Number(prompt("please enter a number for matris..."));
+for (let i = 1; i <= x; i++) {
+        for (let j = 1; j <= x; j++) {
+            if (i == j) {
+                document.write(`<h1 style="display:inline-block;padding:5px;margin-bottom:20px;margin-left:40px;background-color:lightblue;">${1}</h1>`);
+            } else {
+                document.write(`<h1 style="display:inline-block;padding:5px;margin-bottom:20px;margin-left:40px;background-color:lightblue;">${0}</h1>`)
+            }
+        }
+        document.write(`<br>`);
+    }
