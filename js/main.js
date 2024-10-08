@@ -244,3 +244,14 @@ for (let i = 1; i <= x; i++) {
         }
         document.write(`<br>`);
     }
+
+let x = Number(prompt("please enter a number..."));
+let i = 1;
+let sum = 1;
+while (i <= x) {
+    sum = sum * i;
+    i++;
+}
+document.write(`factorial is:  ${sum}`);
+
+
