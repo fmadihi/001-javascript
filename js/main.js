@@ -253,5 +253,20 @@ while (i <= x) {
     i++;
 }
 document.write(`factorial is:  ${sum}`);
+let i = 10;
+do {
+    document.write(i);
+    i++;
+} while (i < 9)
+let data = ['Fatemeh', 'Madihi', 30, 16.87, true];
+document.write(data);
+console.log(data);
+document.write(`<h1>My name is ${data[0]} ${data[1]}. My age is ${data[2]} and my average is ${data[3]}.</h1>`)
+console.log(data instanceof Array);
+console.log(data.length);
 
+for (let i = 0; i < data.length; i++) {
+    document.write(`${data[i]}<br>`)
+    console.log(data[i]);
+}
 
