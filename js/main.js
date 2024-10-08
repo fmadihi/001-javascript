@@ -204,3 +204,9 @@ for (let i = 1; i <= x; i++) {
     sum += point;
 }
 document.write(`the total is = ${sum}`);
+let x = prompt("please enter a number for factorial...");
+let fact = 1;
+for (let i = 1; i <= x; i++) {
+    fact *= i;
+}
+document.write(`the resault is ${fact}`);
