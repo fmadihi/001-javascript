@@ -270,3 +270,7 @@ for (let i = 0; i < data.length; i++) {
     console.log(data[i]);
 }
 
+let data = ["Fatemeh", "Madihi", 30, 16.81];
+console.log(data);
+data.unshift(true);
+console.log(data);
