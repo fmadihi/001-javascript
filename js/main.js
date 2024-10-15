@@ -276,3 +276,10 @@ data.unshift(true);
 console.log(data);
     "fullname" => "ali",
 ]
+let data = [];
+data["firstname"] = "fatemeh";
+data["lastname"] = "madihi"
+data["age"] = 30;
+console.log(data);
+console.log(data["firstname"]);
+console.log(data["lastname"]);
