@@ -287,4 +287,4 @@ let data = ["Fatemeh", "Madihi", 30, true]
 let demo = document.getElementById("demo");
 demo.innerText = data.toString();
 
-
+demo.innerText = data.join("*");
