@@ -292,3 +292,9 @@ delete data[0];
 demo.innerText = data.toString();
 data.shift();
 console.log(data);
+
+let data = ["Fatemeh", "Madihi", 30, true]
+let demo = document.getElementById("demo");
+data.splice(1, 2, "Hello", 2002, false);
+demo.innerText = data.toString();
+console.log(data);
