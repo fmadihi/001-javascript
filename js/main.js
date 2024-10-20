@@ -304,3 +304,9 @@ let demo = document.getElementById("demo");
 data = data.concat(new_data);
 demo.innerText = data.toString();
 console.log(data);
+let data = ["Fatemeh", "Madihi", 30, true];
+let new_data = [1, 2, 3, 4]
+let demo = document.getElementById("demo");
+data.push(new_data);
+demo.innerText = data.toString();
+console.log(data);
