@@ -320,3 +320,10 @@ let demo = document.getElementById("demo");
 let data_new = data.sort();
 demo.innerText = data_new.toString();
 console.log(data_new);
+let data = [11, 15, 9, 5, 0, 14.5, 20, 30, 15.5];
+let demo = document.getElementById("demo");
+let data_new = data.sort(function (a, b) {
+    return b - a
+});
+demo.innerText = data_new.toString();
+console.log(data_new);
