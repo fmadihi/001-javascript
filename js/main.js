@@ -288,3 +288,7 @@ let demo = document.getElementById("demo");
 demo.innerText = data.toString();
 
 demo.innerText = data.join("*");
+delete data[0];
+demo.innerText = data.toString();
+data.shift();
+console.log(data);
