@@ -283,3 +283,6 @@ data["age"] = 30;
 console.log(data);
 console.log(data["firstname"]);
 console.log(data["lastname"]);
+let data = ["Fatemeh", "Madihi", 30, true]
+let demo = document.getElementById("demo");
+demo.innerText = data.toString();
