@@ -310,3 +310,8 @@ let demo = document.getElementById("demo");
 data.push(new_data);
 demo.innerText = data.toString();
 console.log(data);
+let data = ["Fatemeh", "Madihi", 30, true];
+let demo = document.getElementById("demo");
+let data_new = data.slice(0, 2);
+demo.innerText = data_new.toString();
+console.log(data_new);
