@@ -330,7 +330,20 @@ console.log(data_new);
 
 
 
+let data = ["Fatemeh", "Madihi", 30, 16.81];
+let demo = document.getElementById("demo");
+let item = "";
+data.forEach((elem, index) => {
+    item += `<h1 style="color:blue; text-shadow:5px 5px 5px red;">${elem}</h1>`
 
+});
+demo.innerHTML = item;
+
+let data = ["Fatemeh", "Madihi", 30, 16.81];
+data.forEach((elem, index) => {
+    data[index] = elem += ":test";
+});
+console.log(data)
 let data = ["Fatemeh", "Madihi", 30, 16.81];
 let new_data = data.map((elem, index) => {
     return elem += ":test";
