@@ -327,3 +327,13 @@ let data_new = data.sort(function (a, b) {
 });
 demo.innerText = data_new.toString();
 console.log(data_new);
+
+
+
+
+let data = ["Fatemeh", "Madihi", 30, 16.81];
+let new_data = data.map((elem, index) => {
+    return elem += ":test";
+});
+console.log(data)
+console.log(new_data)
