@@ -361,3 +361,29 @@ if (data.lastIndexOf("Fatemeh") > -1) {
 } else {
     console.log("Not Ok")
 }
+let data = {
+    firstName: "Fatemeh",
+    lastName: "Madihi",
+    age: 30,
+    email: "f@f.f",
+    average: 16.81,
+    check: true,
+    sum: null,
+    points: [20, 15, 10, 12, 18],
+    degree: {
+        master: "Ai",
+        bachelor: "computer",
+        phd: "manager"
+    },
+    car: undefined,
+    result:function (){
+        return 100;
+    }
+}
+console.log(data.points)
+console.log(data.points[3])
+
+console.log(data.degree.phd)
+console.log(data.result());
+
+console.log(`my fulltname is ${data.firstName} ${data.lastName} and my email is ${data.email} and Am i gradutated my uni ${data.check} `);
