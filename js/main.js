@@ -354,3 +354,10 @@ let new_data = data.map((elem, index) => {
 });
 console.log(data)
 console.log(new_data)
+let data = ["Fatemeh", "Madihi", 30, 16.81];
+console.log(data.lastIndexOf("Fatemeh"))
+if (data.lastIndexOf("Fatemeh") > -1) {
+    console.log("Ok")
+} else {
+    console.log("Not Ok")
+}
