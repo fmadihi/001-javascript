@@ -421,3 +421,22 @@ button.setAttribute("class", "test")
 button.addEventListener("click", function (e) {
     console.log("hello")
 })
+var xmlHttp = new XMLHttpRequest();
+xmlHttp.open("GET", 'https://jsonplaceholder.typicode.com/posts', false);
+xmlHttp.send(null);
+var data = xmlHttp.responseText;
+var dataResult = JSON.parse(data);
+console.log(dataResult);
+let item = "";
+let result = dataResult.map(function (elem, index) {
+    item += `<section>
+    <h3>userId: ${elem.userId}</h3>
+    <h3>id: ${elem.id}</h3>
+    <h3>title: ${elem.title}</h3>
+    <h3>body: ${elem.body}</h3>
+    </section>`
+});
+document.getElementById("demo").innerHTML = item;
+
+let reData = JSON.stringify(dataResult)
+console.log(reData);
