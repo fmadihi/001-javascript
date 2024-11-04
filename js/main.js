@@ -440,3 +440,40 @@ document.getElementById("demo").innerHTML = item;
 
 let reData = JSON.stringify(dataResult)
 console.log(reData);
+let getData = document.getElementById("get");
+let postData = document.getElementById("post");
+let item = "";
+
+function get() {
+    axios.get("https://jsonplaceholder.typicode.com/posts").then(function (res) {
+        res.data.map((elem) => {
+            item += `
+            <div class="person">
+            <h3>${elem.userId}</h3>
+            <h3>${elem.id}</h3>
+            <h3>${elem.title}</h3>
+            <h3>${elem.body}</h3>
+            </div>
+            `
+        })
+        document.getElementById("root").innerHTML = item
+    }).catch(function (er) {
+        console.log(er)
+    })
+}
+
+function post() {
+    let data = {
+        userId: 100,
+        id: 150,
+        title: "Hello",
+        body: "it is me"
+    }
+    axios.post("https://jsonplaceholder.typicode.com/posts", data).then(function (res) {
+        console.log(res)
+    }).catch(function (er) {
+        console.log(er)
+    })
+}
+getData.addEventListener("click", get)
+postData.addEventListener("click", post)
