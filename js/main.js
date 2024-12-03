@@ -535,3 +535,22 @@ function post() {
 }
 getData.addEventListener("click", get)
 postData.addEventListener("click", post)
+
+let target = document.getElementById("target").innerText;
+// let res = target.split(" ");
+// console.log(res);
+document.getElementById("search").addEventListener("click", function () {
+  let data = document.getElementById("txt").value;
+  let keyWord = target.slice(
+    target.indexOf(data),
+    target.indexOf(data) + data.length
+  );
+  let span = document.createElement("span");
+  span.style.display = "inline-block";
+  span.style.backgroundColor = "red";
+  span.innerHTML = keyWord;
+  document.getElementById("target").append(span);
+  if (target.search(keyWord)) {
+    console.log("ok");
+  }
+});
