@@ -554,3 +554,11 @@ document.getElementById("search").addEventListener("click", function () {
     console.log("ok");
   }
 });
+document.getElementById("txt").addEventListener("click", function (e) {
+//   for (let i = 0; i < res.length; i++) {
+//     if (res[i] === e.target.value) {
+//       console.log("o");
+//     }
+//   }
+// });
+// //
