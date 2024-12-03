@@ -555,10 +555,25 @@ document.getElementById("search").addEventListener("click", function () {
   }
 });
 document.getElementById("txt").addEventListener("click", function (e) {
-//   for (let i = 0; i < res.length; i++) {
-//     if (res[i] === e.target.value) {
-//       console.log("o");
-//     }
-//   }
-// });
-// //
+  for (let i = 0; i < res.length; i++) {
+     if (res[i] === e.target.value) {
+      console.log("o");
+     }
+   }
+});
+
+
+let data = document.getElementById("data");
+ let x = `My name is Fatemeh Madihi`;
+ let res = x.split(" ");
+ for (let i = 0; i < res.length; i++) {
+  if (res[i].indexOf("My")>-1) {
+    data.innerHTML += `<div style="background-color:red;">${res[i]}</div>`;
+  } else {
+    data.innerHTML += `<div>${res[i]}</div>`;
+  } }
+console.log(res);
+for (let i = 0; i < x.length; i++) {
+   console.log(x[i]);
+ }
+conso
