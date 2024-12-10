@@ -576,4 +576,18 @@ console.log(res);
 for (let i = 0; i < x.length; i++) {
    console.log(x[i]);
  }
-conso
+
+let data = Math.abs(-100);
+console.log("abs: ", data);
+data = Math.sqrt(81);
+console.log("sqrt: ", data);
+data = Math.random();
+console.log("random: ", data);
+data = Math.round(2.5);
+console.log("round: ", data);
+data = Math.floor(2.5);
+console.log("floor: ", data);
+data = Math.ceil(2.5);
+console.log("ceil: ", data);
+data = Math.trunc(2.5);
+console.log("trunc: ", data);
