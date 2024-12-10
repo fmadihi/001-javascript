@@ -1,3 +1,11 @@
+let para = document.getElementsByTagName("p");
+para[0].addEventListener("click", function () {
+  for (let i = 0; i < para.length; i++) {
+    para[i].style.width = "50%";
+    para[i].style.height = "100px";
+    para[i].style.backgroundColor = "pink";
+  }
+});
 let data = `abcdefghijklmnopqrstuvwxyz0123456789`;
 document.getElementById("submit").addEventListener("click", function () {
   let captcha =
