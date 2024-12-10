@@ -1,3 +1,13 @@
+let data = `abcdefghijklmnopqrstuvwxyz0123456789`;
+document.getElementById("submit").addEventListener("click", function () {
+  let captcha =
+    data.charAt(Math.floor(Math.random() * 36 + 1)) +
+    data.charAt(Math.floor(Math.random() * 36 + 1)) +
+    data.charAt(Math.floor(Math.random() * 36 + 1)) +
+    data.charAt(Math.floor(Math.random() * 36 + 1)) +
+    data.charAt(Math.floor(Math.random() * 36 + 1));
+  document.getElementById("data").innerText = captcha;
+});
 document.write("<section><h1 style='color:red;'>Hello</h1></section>");
 var x = 100;
 {
