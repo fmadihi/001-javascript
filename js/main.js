@@ -1,3 +1,15 @@
+let demo = document.getElementsByTagName("section");
+let h1 = demo[0].getElementsByTagName("h1");
+let p = demo[0].getElementsByTagName("p");
+let a = demo[0].getElementsByTagName("a");
+a[0].addEventListener("click", () => {
+  h1[0].setAttribute("class", "heading");
+  p[0].setAttribute("class", "paragraph");
+  a[0].setAttribute("class", "link");
+});
+let x =['a','b','c']
+let d = x.splice(1,2,'x','y')
+console.log(d,x)
 let para = document.getElementsByTagName("p");
 para[0].addEventListener("click", function () {
   for (let i = 0; i < para.length; i++) {
