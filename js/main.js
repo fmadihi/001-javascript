@@ -1,3 +1,9 @@
+let img = document.getElementsByTagName("img");
+for (let i = 0; i < img.length; i++) {
+  img[i].addEventListener("click", function () {
+    this.setAttribute("src", "image/03.png");
+  });
+}
 let demo = document.getElementsByTagName("section");
 let h1 = demo[0].getElementsByTagName("h1");
 let p = demo[0].getElementsByTagName("p");
