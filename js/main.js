@@ -1,3 +1,13 @@
+
+let data = document.getElementById("data");
+let search = document.getElementById("search");
+let demo = document.getElementById("demo");
+let demoText = demo.innerText;
+search.addEventListener("click", function () {
+  let word = data.value.trim();
+  let wordNew = new RegExp(word, "g");
+  demo.innerHTML = demoText.replace(wordNew, `<mark>${word}</mark>`);
+});
 let data = document.getElementById("data");
 let search = document.getElementById("search");
 let demo = document.getElementById("demo");
