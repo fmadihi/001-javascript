@@ -129,7 +129,20 @@ function get() {
             `
         })
         document.getElementById("root").innerHTML = item
-    }).catch(function (er) {
+    }).catch(function (er) {let demo = document.getElementById("demo");
+let h1 = document.createElement("h1");
+h1.innerText = "HELLO";
+demo.append(h1);
+
+let para = document.createElement("p");
+para.innerText = "This is p";
+demo.append(para);
+
+let anchor = document.createElement("a");
+anchor.innerText = "This is link";
+demo.append(anchor);
+
+demo.getElementsByTagName("h1")[0].nextSibling.remove();
         console.log(er)
     })
 }
