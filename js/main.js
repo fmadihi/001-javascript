@@ -2,7 +2,14 @@ let demo = document.getElementById("demo");
 let h1 = document.createElement("h1");
 h1.innerText = "HELLO";
 demo.append(h1);
-
+$(function () {
+    $("button.show").on("click",function (){
+    $("section.first").fadeTo(1000,1);
+    })
+    $("button.hide").on("click",function (){
+    $("section.first").fadeTo("fast",0.1);
+    })
+});
 let para = document.createElement("p");
 para.innerText = "This is p";
 demo.append(para);
