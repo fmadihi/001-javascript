@@ -1,0 +1,117 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+section.cover {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+section.cover>section.modal {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: lightsalmon;
+    left: calc(50% - 250px);
+    top: calc(50% - 150px);
+    animation: animated 1s 1 linear;
+}
+
+@keyframes animated {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+section.cover>section.close {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+
+.allCover {
+    Width: 100%;
+    Height: inherit;
+    Background-color: black;
+    Position: absolute;
+    Left: 0;
+    Top: 0;
+    z-index: -1;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  section.menu {
+    width: 100%;
+    height: 50px;
+    background-color: lightcyan;
+  }
+  section.menu > nav {
+    width: inherit;
+    height: inherit;
+  }
+  section.menu > nav > ul {
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  section.menu > nav > ul > li {
+    width: 100px;
+    height: inherit;
+    box-shadow: inset 5px 5px 25px gray;
+    margin-left: 2px;
+    position: relative;
+  }
+  section.menu > nav > ul > li > a {
+    display: block;
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+  }
+  .submenu{
+    width: 200px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    position: absolute;
+    top: 51px;
+    list-style: none;
+    display: none;
+  }
+  .submenu>li{
+    margin-bottom: 5px;
+  }
+
+  section.first{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+  }
+  body{
+    min-height: 2000px;
+  }
