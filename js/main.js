@@ -1,3 +1,10 @@
+$(document).on("scroll", function () {
+    let st = $(this).scrollTop();
+    console.log(st);
+    if(st>500){
+        alert("500px")
+    }
+  });
 let demo = document.getElementById("demo");
 let h1 = document.createElement("h1");
 h1.innerText = "HELLO";
