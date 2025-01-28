@@ -1,3 +1,40 @@
+  let home = $("section.menu>nav>ul>li:nth-of-type(1)>a").attr("data-id");
+  let offsetHome = $(`section${home}`).offset().top;
+  $("section.menu>nav>ul>li:nth-of-type(1)>a").on("click", function () {
+    $("html").animate(
+      {
+        scrollTop: offsetHome,
+      },1000,"linear");
+  });
+
+  let about = $("section.menu>nav>ul>li:nth-of-type(2)>a").attr("data-id");
+  let offsetAbout = $(`section${about}`).offset().top;
+  $("section.menu>nav>ul>li:nth-of-type(2)>a").on("click", function () {
+    $("html").animate(
+      {
+        scrollTop: offsetAbout,
+      },1000,"linear");
+  });
+
+  let gallery = $("section.menu>nav>ul>li:nth-of-type(3)>a").attr("data-id");
+  let offsetGallery = $(`section${gallery}`).offset().top;
+  $("section.menu>nav>ul>li:nth-of-type(3)>a").on("click", function () {
+    $("html").animate(
+      {
+        scrollTop: offsetGallery,
+      },1000,"linear");
+  });
+
+  let contact = $("section.menu>nav>ul>li:nth-of-type(4)>a").attr("data-id");
+  let offsetContact = $(`section${contact}`).offset().top;
+  $("section.menu>nav>ul>li:nth-of-type(4)>a").on("click", function () {
+    $("html").animate(
+      {
+        scrollTop: offsetContact,
+      },1000,"linear");
+  });
+
+
 $(document).on("scroll", function () {
     let st = $(this).scrollTop();
     console.log(st);
