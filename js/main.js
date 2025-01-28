@@ -5,6 +5,37 @@ $(document).on("scroll", function () {
         alert("500px")
     }
   });
+
+$(function () {
+  let x = $("section.first").offset().top - 100;
+  $(document).on("scroll", function () {
+    let st = $(this).scrollTop();
+    if (st > x) {
+      $("section.first>section:nth-of-type(1)")
+        .addClass("animate__animated animate__backInLeft")
+        .fadeIn(500);
+      $("section.first>section:nth-of-type(2)")
+        .addClass("animate__animated animate__backInUp")
+        .fadeIn(500);
+      $("section.first>section:nth-of-type(3)")
+        .addClass("animate__animated animate__backInRight")
+        .fadeIn(500);
+    } 
+    else {
+      $("section.first>section:nth-of-type(1)")
+        .removeClass("animate__animated animate__backInLeft")
+        .fadeOut(500);
+      $("section.first>section:nth-of-type(2)")
+        .removeClass("animate__animated animate__backInUp")
+        .fadeOut(500);
+      $("section.first>section:nth-of-type(3)")
+        .removeClass("animate__animated animate__backInRight")
+        .fadeOut(500);
+    }
+  });
+});
+
+
 let demo = document.getElementById("demo");
 let h1 = document.createElement("h1");
 h1.innerText = "HELLO";
